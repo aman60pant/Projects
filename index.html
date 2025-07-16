@@ -43,68 +43,26 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark text-light p-0">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Daud Wala, PO-Mothrowala, Dehradun, Uttarakhand 248001</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>+91 9958552010</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="fa fa-email-alt text-primary me-2"></small>
-                    <small>sales@shrisolar.in</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center mx-n2">
-                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="topbar-placeholder"></div>
+    <script>
+        fetch("header/topbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("topbar-placeholder").innerHTML = data;
+            });
+    </script>
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <img src="img/solar_main_logo.webp" alt="Logo" style="height: 60px;">
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Product</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="#" class="dropdown-item">Solar Power Plant For Residential Building</a>
-                        <a href="#" class="dropdown-item">Solar Power Plant For Commercial Building</a>
-                        <a href="#" class="dropdown-item">Ground Mount Solar Power Plant</a>
-                        <a href="#" class="dropdown-item">Open Access Solar Power Plant</a>
-                    </div>
-                </div>
-                <a href="" class="nav-item nav-link">About</a>
-                <a href="" class="nav-item nav-link">Project</a>
-                <a href="" class="nav-item nav-link">MSSY</a>
-                <a href="" class="nav-item nav-link">Branch</a>
-                <a href="" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="login-form.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Customer Login<i
-                    class="fa fa-arrow-right ms-3"></i></a>
-        </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("header/navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
     <!-- Navbar End -->
 
 
@@ -498,61 +456,16 @@
     <!-- Pricing Plans End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Get In Touch</h4>
-                    <img src="img/solar_main_logo.webp" alt="Company Logo"
-                        style="height: 60px; width: auto; margin-right: 15px;">
-                    <h3 style="margin: 0; font-weight: bold; color:white;">
-                        SHRI BADRINATH VAIKALPIK URJA LTD.
-                    </h3>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Daud Wala, PO-Mothrowala, Dehradun,
-                        Uttarakhand 248001</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9958552010</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>sales@shrisolar.in</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Popular Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light me-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright text-light py-4 d-flex justify-content-center align-items-center" style="min-height: 5vh;">
-        <div class="text-center">
-            &copy; <a href="#">Shri Solar</a>, All Rights Reserved.
-        </div>
-    </div>
-    
-    <!-- Copyright End -->
+    <!-- Footer and Copyright -->
+    <div id="foot&cpy-placeholder"></div>
+    <script>
+        fetch("header/copyright_and_footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("foot&cpy-placeholder").innerHTML = data;
+            });
+    </script>
+    <!-- Copyright and Footer End -->
 
 
     <!-- Back to Top -->
