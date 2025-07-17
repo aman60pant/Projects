@@ -2,160 +2,291 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>PROJECT | SHRI SOLAR</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Icon Fonts -->
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        rel="stylesheet"
+    />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+        rel="stylesheet"
+    />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Libraries -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet" />
     <style>
-        p {
-            color: black;
+        body {
+            font-family: "Work Sans", sans-serif;
+            color: #222;
+            background-color: #f8f9fa;
         }
 
-        .card img {
-            height: 200px;
-            object-fit: cover;
+        h1,
+        h2,
+        h3,
+        h5 {
+            font-weight: 700;
+            color: #004d00;
+        }
+
+        p.lead {
+            font-size: 1.15rem;
+            color: #333;
+        }
+
+        main {
+            margin-top: 100px;
+            margin-bottom: 60px;
+        }
+
+        /* Card styles */
+        .project-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover,
+        .project-card:focus-within {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 30px rgba(0, 128, 0, 0.3);
+        }
+
+        .project-card img {
             width: 100%;
+            height: 180px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .project-card:hover img,
+        .project-card:focus-within img {
+            transform: scale(1.05);
+        }
+
+        .project-card h3 {
+            padding: 15px 20px 0 20px;
+            font-size: 1.3rem;
+            color: #006400;
+        }
+
+        /* Button styles */
+        .btn-contact {
+            margin: 15px 20px 20px 20px;
+            width: calc(100% - 40px);
+            font-weight: 600;
+            background: linear-gradient(45deg, #007f00, #004d00);
+            border: none;
+            color: white;
+            transition: background 0.3s ease;
+        }
+
+        .btn-contact:hover,
+        .btn-contact:focus {
+            background: linear-gradient(45deg, #004d00, #007f00);
+            box-shadow: 0 6px 12px rgba(0, 77, 0, 0.5);
+            color: #e6ffe6;
+        }
+
+        /* Section titles */
+        .section-header {
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #008000;
+            padding-bottom: 0.3rem;
+            font-size: 1.9rem;
+            text-align: center;
+        }
+
+        /* Benefits list */
+        .benefit-list h5 {
+            color: #006400;
+            margin-bottom: 0.8rem;
+        }
+
+        /* Responsive container max width */
+        @media (min-width: 1400px) {
+            main.container {
+                max-width: 1300px;
+            }
         }
     </style>
 </head>
 
-
 <body>
-    <!-- Topbar Start -->
+    <!-- Topbar -->
     <div id="topbar-placeholder"></div>
-
     <script>
         fetch("header/topbar.html")
-            .then(response => response.text())
-            .then(data => {
+            .then((response) => response.text())
+            .then((data) => {
                 document.getElementById("topbar-placeholder").innerHTML = data;
             });
     </script>
-    <!-- Topbar End -->
-    <!-- Navbar Start -->
+
+    <!-- Navbar -->
     <div id="navbar-placeholder"></div>
     <script>
         fetch("header/navbar.html")
-            .then(response => response.text())
-            .then(data => {
+            .then((response) => response.text())
+            .then((data) => {
                 document.getElementById("navbar-placeholder").innerHTML = data;
             });
     </script>
-    <!-- Navbar End -->
 
-    <div class="container mb-5" style="margin-top: 80px;">
-        <div class="row">
-            <h1 style="text-align: center;">Top Solar Company in Dehradun</h1>
-            <p>Shri Solar, the top solar company in Dehradun, Uttarakhand. We are dedicated to providing sustainable and
-                efficient solar energy solutions for homes, businesses and industries across Dehradun and Uttarakhand.
-                Our high-quality solar panels are designed to help you harness the power of the sun and reduce your
-                energy bills while contributing to a cleaner, greener planet.</p>
-            <h3>Some of our Solar Panel Installation in Dehradun, Uttarakhand</h3>
-            <div class="row">
-                <div class="col-lg-3 mt-3">
-                    <div class="card h-100">
-                        <img src="img/solar1.jpg" alt="SOLAR COMPANY IN DEHRADUN">
+    <!-- Main Content -->
+    <main class="container">
+        <header class="text-center mb-5">
+            <h1 class="animate__animated animate__fadeInDown">Top Solar Company in Dehradun</h1>
+            <p class="lead mx-auto animate__animated animate__fadeIn animate__delay-1s" style="max-width: 720px;">
+                Shri Solar is dedicated to providing sustainable and efficient solar energy solutions for homes, businesses,
+                and industries across Dehradun and Uttarakhand. Our high-quality solar panels help you harness solar power,
+                cut energy bills, and contribute to a greener planet.
+            </p>
+        </header>
+
+        <section aria-labelledby="projects-title" class="animate__animated animate__fadeInUp animate__delay-2s">
+            <h2 id="projects-title" class="section-header">Some of Our Solar Panel Installations in Dehradun, Uttarakhand</h2>
+            <div class="row g-4">
+                <!-- Cards -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="project-card h-100" tabindex="0">
+                        <img src="img/solar1.jpg" alt="30KWp Solar Project in Dehradun" />
                         <h3>30KWp Solar Project</h3>
-                        <a href="#" class="text-center fw-bold" style="color: rgb(0, 128, 0);">Contact Us</a>
-                    </div>
+                        <a href="#" class="btn btn-contact" aria-label="Contact us about 30KWp Solar Project">Contact Us</a>
+                    </article>
                 </div>
-                <div class="col-lg-3 mt-3">
-                    <div class="card h-100">
-                        <img src="img/solar2.jpg" alt="SOLAR COMPANY IN DEHRADUN">
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="project-card h-100" tabindex="0">
+                        <img src="img/solar2.jpg" alt="36 KWp Solar Project in Dehradun" />
                         <h3>36 KWp Solar Project</h3>
-                        <a href="#" class="text-center fw-bold" style="color: rgb(0, 128, 0);">Contact Us</a>
-                    </div>
+                        <a href="#" class="btn btn-contact" aria-label="Contact us about 36 KWp Solar Project">Contact Us</a>
+                    </article>
                 </div>
-                <div class="col-lg-3 mt-3">
-                    <div class="card h-100">
-                        <img src="img/solar4.webp" alt="SOLAR COMPANY IN DEHRADUN">
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="project-card h-100" tabindex="0">
+                        <img src="img/solar4.webp" alt="100 KWp Solar Project in Dehradun" />
                         <h3>100 KWp Dehradun</h3>
-                        <a href="#" class="text-center fw-bold" style="color: rgb(0, 128, 0);">Contact Us</a>
-                    </div>
+                        <a href="#" class="btn btn-contact" aria-label="Contact us about 100 KWp Dehradun Solar Project">Contact Us</a>
+                    </article>
                 </div>
-                <div class="col-lg-3 mt-3">
-                    <div class="card h-100">
-                        <img src="img/solar5.jpg" alt="SOLAR COMPANY IN DEHRADUN">
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="project-card h-100" tabindex="0">
+                        <img src="img/solar5.jpg" alt="225KWp Solar Project in Dehradun" />
                         <h3>225KWp Solar Project</h3>
-                        <a href="#" class="text-center fw-bold" style="color: rgb(0, 128, 0);">Contact Us</a>
-                    </div>
+                        <a href="#" class="btn btn-contact" aria-label="Contact us about 225KWp Solar Project">Contact Us</a>
+                    </article>
                 </div>
-                <div class="col-lg-3 mt-3">
-                    <div class="card h-100">
-                        <img src="img/solar6.jpg" alt="SOLAR COMPANY IN DEHRADUN">
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="project-card h-100" tabindex="0">
+                        <img src="img/solar6.jpg" alt="321 KWp Solar Project in Dehradun" />
                         <h3>321 KWp Solar Project</h3>
-                        <a href="#" class="text-center fw-bold" style="color: rgb(0, 128, 0);">Contact Us</a>
-                    </div>
+                        <a href="#" class="btn btn-contact" aria-label="Contact us about 321 KWp Solar Project">Contact Us</a>
+                    </article>
                 </div>
-                <div class="col-lg-3 mt-3">
-                    <div class="card h-100">
-                        <img src="img/solar7.jpg" alt="SOLAR COMPANY IN DEHRADUN">
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="project-card h-100" tabindex="0">
+                        <img src="img/solar7.jpg" alt="435 KWp Solar Project in Dehradun" />
                         <h3>435 KWp Solar Project</h3>
-                        <a href="#" class="text-center fw-bold" style="color: rgb(0, 128, 0);">Contact Us</a>
-                    </div>
+                        <a href="#" class="btn btn-contact" aria-label="Contact us about 435 KWp Solar Project">Contact Us</a>
+                    </article>
                 </div>
-                <div class="col-lg-3 mt-3">
-                    <div class="card h-100">
-                        <img src="img/solar8.webp" alt="SOLAR COMPANY IN DEHRADUN">
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="project-card h-100" tabindex="0">
+                        <img src="img/solar8.webp" alt="100 KWp ONGC Solar Project in Dehradun" />
                         <h3>100 KWp ONGC DEHRADUN</h3>
-                        <a href="#" class="text-center fw-bold" style="color: rgb(0, 128, 0);">Contact Us</a>
-                    </div>
+                        <a href="#" class="btn btn-contact" aria-label="Contact us about 100 KWp ONGC Solar Project">Contact Us</a>
+                    </article>
                 </div>
-                <div class="col-lg-3 mt-3">
-                    <div class="card h-100">
-                        <img src="img/solar9.webp" alt="SOLAR COMPANY IN DEHRADUN">
+
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <article class="project-card h-100" tabindex="0">
+                        <img src="img/solar9.webp" alt="100 KWp GCPO Solar Project in Dehradun" />
                         <h3>100 KWp GCPO</h3>
-                        <a href="#" class="text-center fw-bold" style="color: rgb(0, 128, 0);">Contact Us</a>
-                    </div>
+                        <a href="#" class="btn btn-contact" aria-label="Contact us about 100 KWp GCPO Solar Project">Contact Us</a>
+                    </article>
                 </div>
             </div>
-            <h3 class="mt-5">Why Choose Us for your Solar Energy Solutions in Dehradun?</h3>
-            <p>As a trusted solar company in Dehradun, we are committed to delivering products that meet the highest
-                industry standards. Here's why we are the preferred choice for solar energy solutions:</p>
-            <h5>1. High-Quality Solar Panels</h5>
-            <h5>2. Custom Solar Solutions for Every Need</h5>
-            <h5>3. Cost-Effective Solar Systems</h5>
-            <h5>4. End-to-End Services</h5>
-            <h5>5. Sustainable Energy Solutions</h5>
-        </div>
-    </div>
+        </section>
 
-    <!-- Footer and Copyright -->
+        <section
+            aria-labelledby="why-choose-us"
+            class="mt-5 px-3 px-md-0 animate__animated animate__fadeIn animate__delay-3s"
+        >
+            <h2 id="why-choose-us" class="section-header">Why Choose Us for Your Solar Energy Solutions in Dehradun?</h2>
+            <p class="text-center mx-auto mb-4" style="max-width: 720px;">
+                As a trusted solar company in Dehradun, we deliver products meeting the highest industry standards.
+                Here's why we are the preferred choice for solar energy solutions:
+            </p>
+
+            <div class="row justify-content-center gx-5">
+                <div class="col-md-6 col-lg-5">
+                    <ul class="list-group list-group-flush benefit-list">
+                        <li class="list-group-item">
+                            <h5><i class="bi bi-check-circle-fill text-success me-2"></i>High-Quality Solar Panels</h5>
+                        </li>
+                        <li class="list-group-item">
+                            <h5><i class="bi bi-check-circle-fill text-success me-2"></i>Custom Solar Solutions for Every Need</h5>
+                        </li>
+                        <li class="list-group-item">
+                            <h5><i class="bi bi-check-circle-fill text-success me-2"></i>Cost-Effective Solar Systems</h5>
+                        </li>
+                        <li class="list-group-item">
+                            <h5><i class="bi bi-check-circle-fill text-success me-2"></i>End-to-End Services</h5>
+                        </li>
+                        <li class="list-group-item">
+                            <h5><i class="bi bi-check-circle-fill text-success me-2"></i>Sustainable Energy Solutions</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <div id="foot&cpy-placeholder"></div>
     <script>
         fetch("header/copyright_and_footer.html")
-            .then(response => response.text())
-            .then(data => {
+            .then((response) => response.text())
+            .then((data) => {
                 document.getElementById("foot&cpy-placeholder").innerHTML = data;
             });
     </script>
-    <!-- Copyright and Footer End -->
 
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
