@@ -43,7 +43,7 @@
 <body>
     <!-- Header Start  -->
     <?php
-    include('include/header.php')
+    include 'include/header.php'
     ?>
     <!-- Header End  -->
 
@@ -125,7 +125,7 @@
     <!-- Footer and Copyright -->
     <div id="foot&cpy-placeholder"></div>
     <?php
-    include('include/footer.php')
+    include 'include/footer.php'
     ?>
     <!-- Copyright and Footer End -->
 

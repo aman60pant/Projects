@@ -44,7 +44,7 @@
 
     <!-- Header Start  -->
      <?php
-        include('include/header.php')
+        include 'include/header.php'
      ?>
      <!-- Header End  -->
 
@@ -440,7 +440,7 @@
 
     <!-- Footer and Copyright -->
     <?php
-    include('include/footer.php')
+    include 'include/footer.php'
     ?>
     <!-- Copyright and Footer End -->
 
