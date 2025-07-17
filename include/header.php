@@ -46,7 +46,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-2 p-lg-0">
-            <a href="index.html" class="nav-item nav-link active text-white">Home</a>
+            <a href="index.php" class="nav-item nav-link active text-white">Home</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Product</a>
                 <div class="dropdown-menu bg-light m-0">

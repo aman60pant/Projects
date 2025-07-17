@@ -16,19 +16,19 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="project.html">Our Services</a>
+                    <a class="btn btn-link" href="about.php">About Us</a>
+                    <a class="btn btn-link" href="contact.php">Contact Us</a>
+                    <a class="btn btn-link" href="project.php">Our Services</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="contact.html">Support</a>
+                    <a class="btn btn-link" href="contact.php">Support</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Popular Links</h4>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="project.html">Our Services</a>
+                    <a class="btn btn-link" href="about.php">About Us</a>
+                    <a class="btn btn-link" href="contact.php">Contact Us</a>
+                    <a class="btn btn-link" href="project.php">Our Services</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="contact.html">Support</a>
+                    <a class="btn btn-link" href="contact.php">Support</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h6 class="text-white mt-4 mb-3">Follow Us</h6>
