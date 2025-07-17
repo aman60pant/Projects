@@ -70,26 +70,11 @@
 
 
 <body>
-    <!-- Topbar Start -->
-    <div id="topbar-placeholder"></div>
-    <script>
-        fetch("header/topbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("topbar-placeholder").innerHTML = data;
-            });
-    </script>
-    <!-- Topbar End -->
-    <!-- Navbar Start -->
-    <div id="navbar-placeholder"></div>
-    <script>
-        fetch("header/navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar-placeholder").innerHTML = data;
-            });
-    </script>
-    <!-- Navbar End -->
+    <!-- Header Start  -->
+    <?php
+    include('include/header.php')
+    ?>
+    <!-- Header End  -->
 
     <!-- Image -->
     <div class="row position-relative">
@@ -154,16 +139,12 @@
         </ol>
     </div>
     <!-- Details about MSSY End-->
-     
+
     <!-- Footer and Copyright -->
     <div id="foot&cpy-placeholder"></div>
-    <script>
-        fetch("header/copyright_and_footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("foot&cpy-placeholder").innerHTML = data;
-            });
-    </script>
+    <?php
+    include('include/footer.php')
+    ?>
     <!-- Copyright and Footer End -->
 
 </body>

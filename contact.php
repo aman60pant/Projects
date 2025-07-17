@@ -41,7 +41,6 @@
             transition: transform 0.3s ease;
         }
 
-        /* #block1:hover  */
 
         #block1 h1,
         #block1 h4 {
@@ -99,26 +98,11 @@
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div id="topbar-placeholder"></div>
-    <script>
-        fetch("header/topbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("topbar-placeholder").innerHTML = data;
-            });
-    </script>
-    <!-- Topbar End -->
-    <!-- Navbar Start -->
-    <div id="navbar-placeholder"></div>
-    <script>
-        fetch("header/navbar.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("navbar-placeholder").innerHTML = data;
-            });
-    </script>
-    <!-- Navbar End -->
+    <!-- Header Start  -->
+     <?php
+        include('include/header.php')
+     ?>
+     <!-- Header End  -->
 
     <!-- Image Banner Start -->
     <div class="container-fluid" style="position: relative; padding: 0;">
@@ -170,13 +154,9 @@
 
     <!-- Footer and Copyright -->
     <div id="foot&cpy-placeholder"></div>
-    <script>
-        fetch("header/copyright_and_footer.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("foot&cpy-placeholder").innerHTML = data;
-            });
-    </script>
+    <?php
+    include('include/footer.php')
+    ?>
     <!-- Copyright and Footer End -->
 
 </body>

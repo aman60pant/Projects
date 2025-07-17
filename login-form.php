@@ -86,7 +86,7 @@
 
             <button type="submit">Login</button>
 
-            <button type="submit" onclick="window.location.href='register.html';">New Registration</button>
+            <button type="submit" onclick="window.location.href='register.php';">New Registration</button>
         </form>
     </div>
 </body>

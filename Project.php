@@ -140,25 +140,11 @@
 </head>
 
 <body>
-    <!-- Topbar -->
-    <div id="topbar-placeholder"></div>
-    <script>
-        fetch("header/topbar.html")
-            .then((response) => response.text())
-            .then((data) => {
-                document.getElementById("topbar-placeholder").innerHTML = data;
-            });
-    </script>
-
-    <!-- Navbar -->
-    <div id="navbar-placeholder"></div>
-    <script>
-        fetch("header/navbar.html")
-            .then((response) => response.text())
-            .then((data) => {
-                document.getElementById("navbar-placeholder").innerHTML = data;
-            });
-    </script>
+    <!-- Header Start  -->
+    <?php
+    include('include/header.php')
+    ?>
+    <!-- Header End  -->
 
     <!-- Main Content -->
     <main class="container">
@@ -277,13 +263,10 @@
 
     <!-- Footer -->
     <div id="foot&cpy-placeholder"></div>
-    <script>
-        fetch("header/copyright_and_footer.html")
-            .then((response) => response.text())
-            .then((data) => {
-                document.getElementById("foot&cpy-placeholder").innerHTML = data;
-            });
-    </script>
+    <?php
+    include('include/footer.php')
+    ?>
+    <!-- Footer End -->
 
     <!-- Bootstrap JS (Optional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
