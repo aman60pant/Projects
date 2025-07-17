@@ -32,9 +32,6 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        p {
-            color: black;
-        }
 
         .link {
             position: absolute;

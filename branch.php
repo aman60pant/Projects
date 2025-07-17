@@ -32,10 +32,6 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        p {
-            color: black;
-        }
-
         h1 {
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
             color: black;
