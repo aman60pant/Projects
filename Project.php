@@ -104,7 +104,7 @@
             background: linear-gradient(45deg, #007f00, #004d00);
             border: none;
             color: white;
-            transition: background 0.3s ease;
+            transition: 0.3s ease;
         }
 
         .btn-contact:hover,
