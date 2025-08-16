@@ -51,7 +51,7 @@
     <div class="row" style="margin-left: 25px;">
         <h1 style="text-align: center; font-size: 40px; font-style: italic;">OUR BRANCHES</h1>
         <div class="row">
-            
+
             <div class="col-lg-4" style="padding: 10px 5px;">
                 <img src="img/1-branches.jpg" alt="Branch" style="width: 100%; height: 300px; display: block;">
                 <div
