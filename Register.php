@@ -32,7 +32,6 @@
             width: 300px;
         }
 
-        /* Heading */
         .login-container h2 {
             margin-bottom: 20px;
             text-align: center;
