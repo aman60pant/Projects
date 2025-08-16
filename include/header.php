@@ -66,7 +66,6 @@
             class="btn btn-primary py-2 px-lg-4 d-none d-lg-block ms-lg-3 align-self-center">Customer Login
             <i class="fa fa-arrow-right ms-3"></i>
         </a>
-
     </div>
 </nav>
 
