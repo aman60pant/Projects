@@ -49,7 +49,6 @@
 
         .link:hover {
             color: yellow;
-            /* change to any hover color */
         }
 
         h1 {
