@@ -39,7 +39,6 @@
             color: yellow;
         }
 
-        /* Labels and inputs */
         .login-container label {
             display: block;
             margin-bottom: 5px;
