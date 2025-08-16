@@ -78,6 +78,7 @@
                     dependent for its energy requirements.</p>
                 <div class="row">
                     <div class="row">
+                        
                         <div class="col-lg-4" style="padding: 10px 5px;">
                             <img src="img/power-pic1.jpg" alt="Solar Power"
                                 style="width: 100%; height: 300px; display: block;">
@@ -143,7 +144,7 @@
                                 </h2>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="row">
