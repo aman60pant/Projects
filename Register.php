@@ -23,7 +23,7 @@
             background: #000000;
         }
 
-        /* Login form container */
+        
         .login-container {
             background: #2e2e2e;
             padding: 40px;
