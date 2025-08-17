@@ -126,6 +126,7 @@
                 <li>Support for technical guidance and infrastructure development.</li>
             </ul>
         </ol>
+        
         <h2 style="font-size: 23px;">Benifits:</h2>
         <ol style="color: black;">
             <li>Sustainable Income Source: Landowners earn a steady income by utilizing idle land.</li>
