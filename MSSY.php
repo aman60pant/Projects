@@ -133,7 +133,6 @@
             <li>Reduces dependency on fossil fuels and lowers carbon emissions.</li>
         </ol>
     </div>
-    <!-- Details about MSSY End-->
 
     <!-- Footer and Copyright -->
     <div id="foot&cpy-placeholder"></div>
