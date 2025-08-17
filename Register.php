@@ -69,6 +69,8 @@
         }
     </Style>
 </head>
+
+<body>
     <div class="login-container">
         <h2>New Registration</h2>
         <form>
