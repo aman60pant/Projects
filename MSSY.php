@@ -140,6 +140,7 @@
     <?php
     include 'include/footer.php'
     ?>
+    <!-- Copyright and Footer End -->
 
 </body>
 
