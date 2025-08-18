@@ -438,7 +438,6 @@
     <!-- Pricing Plans End -->
 
 
-    <!-- Footer and Copyright -->
     <?php
     include 'include/footer.php'
     ?>
