@@ -435,6 +435,7 @@
             </div>
         </div>
     </div>
+    <!-- Pricing Plans End -->
 
 
     <!-- Footer and Copyright -->
