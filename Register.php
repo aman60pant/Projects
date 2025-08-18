@@ -14,6 +14,7 @@
             font-family: Arial, sans-serif;
         }
 
+        /* Body background and centering */
         body {
             height: 100vh;
             display: flex;
