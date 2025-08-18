@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Registration | Shri Solar</title>
     <Style>
+        /* Reset some defaults */
         * {
             margin: 0;
             padding: 0;
